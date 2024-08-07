@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .editor, .email-content {
+    @apply overflow-x-hidden;
+
+    .tiptap {
+      @apply h-full bg-white p-3 rounded-md;
+    }
+  }
+}
