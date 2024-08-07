@@ -1,18 +1,18 @@
 <script lang="ts" setup>
 import { Pane, Splitpanes } from 'splitpanes';
-import EmailEditor from '~/components/editor/EmailEditor.vue';
+import EditorEmail from '~/components/editor/EditorEmail.vue';
 </script>
 
 <template>
-  <div class="flex items-center justify-center bg-transparent rounded-lg overflow-hidden">
-    <Splitpanes class="h-full" v-bind="$attrs">
-      <Pane class="shadow-inner bg-gray-100 dark:bg-gray-600" min-size="40%">
-        <slot name="editor">
-          <EmailEditor class="p-3 rounded-lg" />
-        </slot>
-      </Pane>
-      <Pane class="shadow-inner bg-gray-100 dark:bg-gray-600" min-size="30%">
+  <div class="flex items-center justify-center bg-transparent overflow-hidden">
+    <Splitpanes class="min-h-full" v-bind="$attrs">
+      <Pane class="shadow-inner bg-gray-100 dark:bg-gray-800" min-size="40%">
         <slot name="preview"></slot>
+      </Pane>
+      <Pane class="shadow-inner bg-gray-100 dark:bg-gray-800" min-size="40%">
+        <slot name="editor">
+          <EditorEmail class="p-2 rounded-lg" />
+        </slot>
       </Pane>
     </Splitpanes>
   </div>

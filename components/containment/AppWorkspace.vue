@@ -1,7 +1,7 @@
 <template>
   <main
     id="main"
-    class="main w-full min-h-screen overflow-x-hidden transition-all duration-300 bg-workspace text-workspace-foreground"
+    class="main w-full min-h-screen overflow-x-hidden transition-all duration-300"
     data-component="workspace"
   >
     <slot />

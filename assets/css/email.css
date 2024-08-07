@@ -6,8 +6,20 @@
   .editor, .email-content {
     @apply overflow-x-hidden;
 
+    p {
+      @apply mt-0;
+    }
+
+    img {
+      @apply w-full max-w-full object-cover border-2 border-transparent;
+    }
+
     .tiptap {
-      @apply h-full bg-white p-3 rounded-md;
+      @apply min-h-full bg-white p-3 rounded-md;
+    }
+
+    .ProseMirror-selectednode {
+      @apply border-2 border-blue-500;
     }
   }
 }
