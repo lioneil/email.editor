@@ -7,15 +7,15 @@ import EditorSplitPane from '~/components/editor/EditorSplitPane.vue';
 </script>
 
 <template>
-  <AppGrid class="flex flex-col min-h-screen">
-    <AppContainer class="flex flex-col gap-3 border-b dark:border-gray-800" full>
+  <AppGrid class="flex flex-col !gap-0 min-h-screen">
+    <AppContainer class="flex flex-col gap-3" full>
       <BaseHeading class="font-bold flex items-center gap-2" type="h3">
         <EmailEditIcon class="size-7" />
         {{ $t('Email Editor') }}
       </BaseHeading>
     </AppContainer>
 
-    <AppContainer class="flex grow min-h-full gap-3 p-0 px-0" full>
+    <AppContainer class="flex grow min-h-full gap-3 p-0 px-0 !pt-0" full>
       <EditorSplitPane class="flex-grow" />
     </AppContainer>
   </AppGrid>

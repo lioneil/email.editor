@@ -25,6 +25,7 @@
     "@tiptap/starter-kit": "^2.5.9",
     "@tiptap/vue-3": "^2.5.9",
     "lucide-vue-next": "^0.424.0",
+    "mjml-browser": "^4.15.3",
     "nuxt": "^3.12.4",
     "splitpanes": "^3.1.5",
     "vue": "latest"
@@ -33,6 +34,7 @@
     "@nuxt/eslint": "^0.5.0",
     "@nuxtjs/i18n": "^8.3.3",
     "@tailwindcss/typography": "^0.5.13",
+    "@types/mjml-browser": "^4.15.0",
     "@types/splitpanes": "^2.2.6",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.41",
