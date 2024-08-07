@@ -9,6 +9,11 @@ module.exports = {
     './app.vue',
     './error.vue',
   ],
+  variants: {
+    extend: {
+      opacity: ['hover', 'group-hover'],
+    },
+  },
   theme: {
     extend: {},
   },

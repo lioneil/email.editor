@@ -15,9 +15,16 @@
     "node": ">=20.15.1"
   },
   "dependencies": {
+    "@tiptap/extension-blockquote": "^2.5.9",
+    "@tiptap/extension-dropcursor": "^2.5.9",
+    "@tiptap/extension-image": "^2.5.9",
+    "@tiptap/extension-link": "^2.5.9",
+    "@tiptap/extension-strike": "^2.5.9",
+    "@tiptap/extension-underline": "^2.5.9",
     "@tiptap/pm": "^2.5.9",
     "@tiptap/starter-kit": "^2.5.9",
     "@tiptap/vue-3": "^2.5.9",
+    "lucide-vue-next": "^0.424.0",
     "nuxt": "^3.12.4",
     "splitpanes": "^3.1.5",
     "vue": "latest"
