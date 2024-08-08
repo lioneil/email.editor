@@ -1,4 +1,9 @@
-# Visual Email Editor
+<p style="text-align: center">
+<img src="./screenshot.png" alt="screenshot" style="border-radius: 8px;">
+</p>
+<h1 style="text-align: center">Visual Email Editor</h1>
+
+---
 
 This project aims to create a visual email editor using TipTap that generates MJML templates. The application is built with Nuxt 3 and Vue.js, providing a user-friendly interface for designing emails.
 

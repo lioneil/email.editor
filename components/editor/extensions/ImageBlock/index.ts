@@ -19,7 +19,7 @@ export default Node.create({
         renderHTML: (attributes) => {
           return {
             'data-src': attributes.src,
-            'style': `background-image: url(${attributes.src}); background-size: cover; background-position: center; padding: 20px; min-height: 252px;`,
+            'style': `background-image: url(${attributes.src}); background-size: cover; background-position: center; padding: 20px; min-height: 212px;`,
           };
         },
       },

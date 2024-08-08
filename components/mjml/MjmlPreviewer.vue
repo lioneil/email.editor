@@ -105,7 +105,7 @@ export default {
             :class="{
               active: mode === 'mobile',
             }"
-            class="btn-mode rounded-e-none hover:text-gray-800"
+            class="btn-mode rounded-e-none hover:text-gray-800 dark:text-gray-900 dark:hover:text-gray-900"
             @click="setMode('mobile')"
           >
             <SmartphoneIcon class="size-4" />
@@ -115,7 +115,7 @@ export default {
             :class="{
               active: mode === 'desktop',
             }"
-            class="btn-mode rounded-s-none hover:text-gray-800"
+            class="btn-mode rounded-s-none hover:text-gray-800 dark:text-gray-900 dark:hover:text-gray-900"
             @click="setMode('desktop')"
           >
             <MonitorIcon class="size-4" />
