@@ -12,7 +12,7 @@ export const messages = {
     <p>Create a <strong>personalized</strong> email <em>now</em>! ✉️ 🎉</p>
     <p>Today we will create a responsive email template.</p>
     <ul>
-    <li>📥 Use Markdown syntax to format your text.</li>
+    <li>📥 Use Markdown syntax to format your <span style="color: #41a300;">colored text</span>.</li>
     <li>🔗 Add <a href="http://localhost:3000">links</a> by <code>highlighting</code> then pasting the link.</li>
     <li>🖼️ Insert images by uploading them or pasting an image URL.</li>
     </ul>

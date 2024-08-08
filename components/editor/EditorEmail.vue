@@ -8,6 +8,8 @@ import { Image } from '@tiptap/extension-image';
 import { Link } from '@tiptap/extension-link';
 import { Underline } from '@tiptap/extension-underline';
 import { type Editor, EditorContent, useEditor } from '@tiptap/vue-3';
+import { Color } from '@tiptap/extension-color';
+import { TextStyle } from '@tiptap/extension-text-style';
 
 const $emit = defineEmits(['update:modelValue', 'update:editor']);
 
@@ -22,9 +24,13 @@ const editor: ShallowRef<Editor | undefined> = useEditor({
     ImageBlock,
     Underline,
     Image,
+    TextStyle,
     Link.configure({
       openOnClick: false,
       defaultProtocol: 'https',
+    }),
+    Color.configure({
+      types: ['textStyle'],
     }),
   ],
   editorProps: {

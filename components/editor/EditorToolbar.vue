@@ -9,6 +9,7 @@ import ButtonStrike from '~/components/editor/controls/ButtonStrike.vue';
 import ButtonBlockquote from '~/components/editor/controls/ButtonBlockquote.vue';
 import ButtonLink from '~/components/editor/controls/ButtonLink.vue';
 import ButtonImageBlock from '~/components/editor/controls/ButtonImageBlock.vue';
+import ButtonColor from '~/components/editor/controls/ButtonColor.vue';
 
 defineProps<{
   editor?: Editor;
@@ -18,6 +19,12 @@ defineProps<{
 <template>
   <ClientOnly>
     <div v-if="editor" class="flex flex-col gap-5">
+      <div class="flex flex-col gap-1">
+        <ButtonColor
+          :color="editor.getAttributes('textStyle').color"
+          @update:color="(color) => editor?.chain().focus().setColor(color).run()"
+        />
+      </div>
       <div class="flex flex-col gap-1">
         <ButtonBold
           :active="editor.isActive('bold')"
