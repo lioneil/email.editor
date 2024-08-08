@@ -4,22 +4,18 @@
 
 @layer base {
   .editor, .email-content {
-    @apply overflow-x-hidden font-normal text-xl leading-normal;
-
-    html, body {
-      font-size: 16px;
-    }
+    @apply overflow-x-hidden;
 
     p {
       @apply mt-0;
     }
 
     img {
-      @apply w-auto max-w-full object-cover border-2 border-transparent mx-auto;
+      @apply w-auto max-w-full object-cover rounded-lg border-2 border-transparent mx-auto hover:border-gray-200;
     }
 
     .tiptap {
-      @apply min-h-full bg-white p-3 rounded-md;
+      @apply min-h-full bg-white p-6 rounded-md;
     }
 
     ul > li, ol > li, li p {

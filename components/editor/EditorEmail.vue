@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import AppActivitybar from '~/components/containment/AppActivitybar.vue';
-import BlockImage from '~/components/editor/extensions/BlockImage';
+import ImageBlock from '~/components/editor/extensions/ImageBlock';
 import DraggableBlock from '~/components/editor/extensions/DraggableBlock';
 import StarterKit from '@tiptap/starter-kit';
 import type { ShallowRef } from 'vue';
@@ -9,7 +9,7 @@ import { Link } from '@tiptap/extension-link';
 import { Underline } from '@tiptap/extension-underline';
 import { type Editor, EditorContent, useEditor } from '@tiptap/vue-3';
 
-const $emit = defineEmits(['update:modelValue']);
+const $emit = defineEmits(['update:modelValue', 'update:editor']);
 
 const model = defineModel<string>({ default: '' });
 const editor: ShallowRef<Editor | undefined> = useEditor({
@@ -19,7 +19,7 @@ const editor: ShallowRef<Editor | undefined> = useEditor({
   extensions: [
     StarterKit,
     DraggableBlock,
-    BlockImage,
+    ImageBlock,
     Underline,
     Image,
     Link.configure({
@@ -34,11 +34,13 @@ const editor: ShallowRef<Editor | undefined> = useEditor({
   },
   onUpdate: () => {
     $emit('update:modelValue', editor.value?.getHTML());
+    $emit('update:editor', editor.value);
   },
 });
 
 onMounted(() => {
   $emit('update:modelValue', editor.value?.getHTML());
+  $emit('update:editor', editor.value);
 });
 
 onBeforeUnmount(() => {

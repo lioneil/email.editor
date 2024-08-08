@@ -13,7 +13,7 @@ defineProps(nodeViewProps);
 
 <style lang="postcss">
 .draggable-block {
-  @apply flex items-start bg-white -mx-2 rounded-lg focus:outline-1 border border-transparent hover:border-gray-200;
+  @apply flex items-start bg-white -mx-2 rounded-lg focus:outline-1 border-2 border-transparent hover:border-gray-200;
 
   .drag-handle {
     @apply relative flex top-0.5 px-2 m-1 cursor-grab;

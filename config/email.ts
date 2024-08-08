@@ -2,8 +2,8 @@ export const messages = {
   introduction: `
     <img src="/favicon.ico" alt="App Logo">
     <div data-type="draggable-block">
-      <p>To quote the great user:</p>
-      <blockquote><p>Drag me below.</p></blockquote>
+      <p>To following is a quote:</p>
+      <blockquote><p>Drag me below.</p><cite>- Anonymous</cite></blockquote>
     </div>
     <div data-type="draggable-block">
       <h1>Welcome to our Email Template!</h1>

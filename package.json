@@ -9,7 +9,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "email:styles": "tailwindcss build -i assets/css/email.css -o public/email.client.css"
   },
   "engines": {
     "node": ">=20.15.1"

@@ -8,6 +8,7 @@ import ButtonDraggable from '~/components/editor/controls/ButtonDraggable.vue';
 import ButtonStrike from '~/components/editor/controls/ButtonStrike.vue';
 import ButtonBlockquote from '~/components/editor/controls/ButtonBlockquote.vue';
 import ButtonLink from '~/components/editor/controls/ButtonLink.vue';
+import ButtonImageBlock from '~/components/editor/controls/ButtonImageBlock.vue';
 
 defineProps<{
   editor?: Editor;
@@ -43,7 +44,7 @@ defineProps<{
         />
         <ButtonLink
           :active="editor.isActive('link')"
-          @click="editor.chain().focus().toggleBlockquote().run()"
+          @update:link="(text) => editor?.chain().focus().setLink({ href: text }).run()"
         />
       </div>
 
@@ -51,6 +52,10 @@ defineProps<{
         <ButtonImage
           :active="editor.isActive('image')"
           @click="(image) => editor?.chain().focus().setImage({ src: image }).run()"
+        />
+        <ButtonImageBlock
+          :active="editor.isActive('image-block')"
+          @click="(content) => editor?.chain().focus().insertContent(content).run()"
         />
         <ButtonDraggable
           :active="editor.isActive('draggable-block')"
