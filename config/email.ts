@@ -6,7 +6,7 @@ export const messages = {
       <blockquote><p>Drag me below.</p><cite>- Anonymous</cite></blockquote>
     </div>
     <div data-type="draggable-block">
-      <h1>Welcome to our Email Template!</h1>
+      <h1>Welcome to Email Editor!</h1>
     </div>
     <p>Dear [NAME],</p>
     <p>Create a <strong>personalized</strong> email <em>now</em>! ✉️ 🎉</p>
